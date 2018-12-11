@@ -7,7 +7,7 @@ package emsamablajecomputadoras.creacional;
 
 /**
  *
- * @author Palacios
+ * @author Atiencia - Sesme
  */
 public class Mainboard {
     
@@ -19,6 +19,9 @@ public class Mainboard {
         this.numeracion = numeracion;
     }
 
+    public Mainboard() {
+    }
+    
     public String getModelo() {
         return modelo;
     }

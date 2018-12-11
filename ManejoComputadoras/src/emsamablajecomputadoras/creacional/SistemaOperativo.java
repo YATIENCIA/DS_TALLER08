@@ -7,7 +7,7 @@ package emsamablajecomputadoras.creacional;
 
 /**
  *
- * @author Palacios
+ * @author Atiencia - Sesme
  */
 public class SistemaOperativo {
     
@@ -15,6 +15,9 @@ public class SistemaOperativo {
     private int arquitectura;
     private String version;
 
+    public SistemaOperativo() {
+    }
+    
     public SistemaOperativo(String nombre, int arquitectura, String version) {
         this.nombre = nombre;
         this.arquitectura = arquitectura;

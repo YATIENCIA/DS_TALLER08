@@ -7,7 +7,7 @@ package emsamablajecomputadoras.creacional;
 
 /**
  *
- * @author Palacios
+ * @author Atiencia - Sesme
  */
 public class Computador {
     private int ram;
@@ -33,7 +33,6 @@ public class Computador {
     }
     
     
-
     public int getRam() {
         return ram;
     }
@@ -90,15 +89,7 @@ public class Computador {
         this.coolerExterno = coolerExterno;
     }
     
-    
-
-      
-    @Override
-    public String toString(){
-        return "Especificiaciones Tecnicas:\n";
-               
-    }
-
+   
 	public String getTipoRam() {
 		return tipoRam;
 	}
@@ -116,6 +107,19 @@ public class Computador {
 	}
     
     
+    
+   @Override
+   public String toString(){
+       return "Especificiaciones Tecnicas:\n"+
+       		"Marca:"+marca+"\n"+
+       		"Modelo:"+modelo+"\n"+
+        "RAM:"+tipoRam+" "+ram+"gb \n"+
+        "Almacenamiento:"+almacenamiento+" "+tipoAlmacenamiento+"\n"+
+        "SO:"+os+"\n"+
+        "Mainboard:"+placa+"\n"+
+        "Cooler externo:"+coolerExterno+"\n";
+   }
+
     
     
 }

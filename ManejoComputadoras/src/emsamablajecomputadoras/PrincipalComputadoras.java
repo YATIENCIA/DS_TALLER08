@@ -3,6 +3,9 @@
  */
 package emsamablajecomputadoras;
 
+import ComputerTypes.AsusROGE;
+import ComputerTypes.AsusZenbook;
+import DirectorClasses.ComputadorDirector;
 import emsamablajecomputadoras.creacional.*;
 
 /**
@@ -15,17 +18,22 @@ public class PrincipalComputadoras {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// Necesito ensamblar 2 computadoras
+		
 		// AsusROGE
-		Computador roge = new Computador(/*todos los atributos*/);
+		ComputadorDirector directorAR= new ComputadorDirector(new AsusROGE());
+		directorAR.ConstruirComputador();
+		Computador AR= directorAR.GetComputador();
+	
 		
 		// AsusZenbook
-		Computador zenbook = new Computador(/*todos los atributos*/);
+		ComputadorDirector directorAZ= new ComputadorDirector(new AsusZenbook());
+		directorAZ.ConstruirComputador();
+		Computador AZ= directorAZ.GetComputador();
 		
-		//Mostrar las caracteristicas de ambas computadoras 
-		roge.toString();
-		zenbook.toString();
-
+		
+	//Muestra por pantalla
+		System.out.println("Computadora 1 \n"+AR.toString());
+		System.out.println("Computadora 2 \n"+AZ.toString());
 	}
 
 }
